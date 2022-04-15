@@ -1,0 +1,1 @@
+/home/zhangyang/workspace/github/gemm/how-to-optimize-gemm/src/riscv64/out/bin/sgemm

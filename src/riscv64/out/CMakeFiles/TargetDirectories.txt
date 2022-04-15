@@ -1,0 +1,7 @@
+/home/zhangyang/workspace/github/gemm/how-to-optimize-gemm/src/riscv64/out/CMakeFiles/install/strip.dir
+/home/zhangyang/workspace/github/gemm/how-to-optimize-gemm/src/riscv64/out/CMakeFiles/install/local.dir
+/home/zhangyang/workspace/github/gemm/how-to-optimize-gemm/src/riscv64/out/CMakeFiles/install.dir
+/home/zhangyang/workspace/github/gemm/how-to-optimize-gemm/src/riscv64/out/CMakeFiles/list_install_components.dir
+/home/zhangyang/workspace/github/gemm/how-to-optimize-gemm/src/riscv64/out/CMakeFiles/rebuild_cache.dir
+/home/zhangyang/workspace/github/gemm/how-to-optimize-gemm/src/riscv64/out/CMakeFiles/edit_cache.dir
+/home/zhangyang/workspace/github/gemm/how-to-optimize-gemm/src/riscv64/out/CMakeFiles/sgemm.dir
