@@ -85,7 +85,7 @@ fig, ax = plt.subplots()
 ax.plot(old_data[:,0], old_data[:,1], 'bo-.', label='old:' + old.version)
 ax.plot(new_data[:,0], new_data[:,1], 'r-*', label='new:' + new.version)
 
-ax.set(xlabel='m = n = k', ylabel='GFLOPS/sec.',
+ax.set(xlabel='m, k = m + 16, n = m + 32', ylabel='GFLOPS/sec.',
     title="OLD = {}, NEW = {}".format(old.version, new.version))
 ax.grid()
 ax.legend()
@@ -93,5 +93,5 @@ ax.legend()
 ax.set_xlim([old_data[0,0], old_data[-1,0]])
 ax.set_ylim([0, max_gflops])
 
-# fig.savefig("test.png")
+fig.savefig("test.png")
 plt.show()

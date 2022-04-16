@@ -17,7 +17,7 @@ void MY_MMult( int m, int n, int k, float *a, float *b, float *c)
       /* Update the C( i,j ) with the inner product of the ith row of A
 	 and the jth column of B */
 
-      AddDot( k, &A( i,0 ), &B( 0,j ), k, &C( i,j ) );
+      AddDot( k, &A( i,0 ), &B( 0,j ), n, &C( i,j ) );
     }
   }
 }
