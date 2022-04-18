@@ -2,8 +2,12 @@
 
 export PATH=$PATH:/home/zhangyang/workspace/tools/t-head/v2.2.3/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.2.3/bin
 
-old=${1:-MMult0.cpp}
-opt=${2:-MMult0.cpp}
+old=${1:-MMult0}
+opt=${2:-MMult0}
+pfirst=${3:-40}
+plast=${4:-800}
+pinc=${5:-40}
+
 rm -rf out
 mkdir out
 pushd out
@@ -11,6 +15,9 @@ cmake -DCMAKE_BUILD_TYPE=Release                    \
       -DCMAKE_INSTALL_PREFIX=`pwd`                  \
       -DCMAKE_TOOLCHAIN_FILE=../cmake/Riscv64.cmake \
       -DOPT=${opt}                                  \
+      -DPFIRST=${pfirst}                            \
+      -DPLAST=${plast}                              \
+      -DPINC=${pinc}                                \
       ..
 
 make -j && make install

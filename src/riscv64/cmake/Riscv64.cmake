@@ -13,5 +13,5 @@ set(CMAKE_CXX_FLAGS "-march=rv64gcv0p7_zfh_xtheadc -mabi=lp64d -mtune=c906 -stat
 
 set(CMAKE_C_FLAGS_DEBUG "-O0 -g3")
 set(CMAKE_C_FLAGS_RELEASE "-O2 -s")
-set(CMAKE_CXX_FLAGS_DEBUG "-std=c++17 -O0 -g3")
-set(CMAKE_CXX_FLAGS_RELEASE "-std=c++17 -O2 -s")
+set(CMAKE_CXX_FLAGS_DEBUG "-std=c++11 -O0 -g3")
+set(CMAKE_CXX_FLAGS_RELEASE "-std=c++11 -O2 -s")

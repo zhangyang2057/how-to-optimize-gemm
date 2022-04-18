@@ -83,7 +83,7 @@ int main()
 
     diff = compare_matrices( m, n, c, cref);
 
-    printf( "%d %le %le \n", p, gflops / dtime_best, diff );
+    printf( "%d %f %f \n", p, gflops / dtime_best, diff );
     fflush( stdout );
 
     free( a );

@@ -2,9 +2,17 @@
 In the test driver, there is a loop "for ( p=PFIRST; p<= PLAST; p+= PINC )"
 The below parameters set this range of values that p takes on
 */
+#ifndef PFIRST
 #define PFIRST 40
+#endif
+
+#ifndef PLAST
 #define PLAST  800
+#endif
+
+#ifndef PINC
 #define PINC   40
+#endif
 
 /*
 In the test driver, the m, n, and k dimensions are set to the below
@@ -21,7 +29,9 @@ In the test driver, each experiment is repeated NREPEATS times and
 the best time from these repeats is used to compute the performance
 */
 
-#define NREPEATS 1
+#ifndef NREPEATS
+#define NREPEATS 2
+#endif
 
 /*
 Matrices A, B, and C are stored in two dimensional arrays with

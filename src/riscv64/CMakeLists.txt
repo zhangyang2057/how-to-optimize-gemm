@@ -10,5 +10,8 @@ if (OPT)
     set(SRC ${SRC} ${OPT}.cpp)
 endif()
 
+add_definitions(-DPFIRST=${PFIRST})
+add_definitions(-DPLAST=${PLAST})
+add_definitions(-DPINC=${PINC})
 add_executable(${bin} ${SRC})
 install(TARGETS ${bin} DESTINATION bin)
