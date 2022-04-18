@@ -32,8 +32,8 @@ int main()
 
   for ( p=PFIRST; p<=PLAST; p+=PINC ){
     m = ( M == -1 ? p : M );
-    n = ( N == -1 ? p + 32: N );
-    k = ( K == -1 ? p + 16 : K );
+    n = ( N == -1 ? p : N );
+    k = ( K == -1 ? p : K );
 
     gflops = 2.0 * m * n * k * 1.0e-09;
 

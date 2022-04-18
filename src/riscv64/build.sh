@@ -2,16 +2,15 @@
 
 export PATH=$PATH:/home/zhangyang/workspace/tools/t-head/v2.2.3/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.2.3/bin
 
-old=MMult0
-opt=MMult1
+old=${1:-MMult0.cpp}
+opt=${2:-MMult0.cpp}
 rm -rf out
 mkdir out
 pushd out
-# cmake -DCMAKE_BUILD_TYPE=Debug                     \
-cmake -DCMAKE_BUILD_TYPE=Release                   \
-      -DCMAKE_INSTALL_PREFIX=`pwd`                 \
-      -DCMAKE_TOOLCHAIN_FILE=../cmake/Riscv64.cmake   \
-      -DOPT=${opt} \
+cmake -DCMAKE_BUILD_TYPE=Release                    \
+      -DCMAKE_INSTALL_PREFIX=`pwd`                  \
+      -DCMAKE_TOOLCHAIN_FILE=../cmake/Riscv64.cmake \
+      -DOPT=${opt}                                  \
       ..
 
 make -j && make install
